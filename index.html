@@ -15,6 +15,21 @@
             padding: 0;
             line-height: 1.6;
         }
+
+        .widget-container {
+            max-width: 600px; /* Adjust the max width as needed */
+            margin: 20px auto; /* Center the widget and add spacing */
+            padding: 10px;
+            border: 1px solid #ccc; /* Optional border */
+            border-radius: 10px; /* Optional rounded corners */
+            overflow: hidden; /* Ensure no overflow */
+        }
+
+        .widget-container iframe, 
+        .widget-container > * {
+            width: 100%; /* Make the content responsive */
+            height: auto; /* Adjust height automatically */
+        }
     </style>
 </head>
 <body>
@@ -25,9 +40,11 @@
     <main>
         <p>This is a blank HTML template with a Sweatpals widget embedded below.</p>
 
-        <!-- Sweatpals widget begin -->
-        <script src="https://www.sweatpals.com/embed/rooftop-pickleball-pals-2-hours-64167/checkout/script?enableAutoEmbed=true&colorHex=000000&fontFamily=Poppins&shortLocalInstance=2024-12-06&priceTierId=8cd31fd0-b122-4821-b607-9a1f09e9b4d6"></script>
-        <!-- Sweatpals widget end -->
+        <div class="widget-container">
+            <!-- Sweatpals widget begin -->
+            <script src="https://www.sweatpals.com/embed/rooftop-pickleball-pals-2-hours-64167/checkout/script?enableAutoEmbed=true&colorHex=000000&fontFamily=Poppins&shortLocalInstance=2024-12-06&priceTierId=8cd31fd0-b122-4821-b607-9a1f09e9b4d6"></script>
+            <!-- Sweatpals widget end -->
+        </div>
     </main>
 
     <footer>
